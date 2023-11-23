@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Button Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="floating-button-container">
+        <button id="floating-button"><i class="fas fa-headphones"></i>  Live Agents</button>
+        <div id="button-card" class="card-hidden">
+            <button id="close-button" data-toggle="tooltip" title="close">&#10005;</button> <!-- Close Button -->
+            <!-- Title and Subtitle -->
+            <h1 id="card-title">Hello there! 👋🏼  <br>our humans are online! </h1>
+            <h2 id="card-subtitle">In order to get started, we'd like to collect  some information.</h2>
+            <!-- Form Fields -->
+            <input type="text" id="name-field" placeholder="Your Name" required>
+            <span class="help-text" id="name-help">Please enter a valid name.</span>
+
+            <input type="email" id="email-field" placeholder="Your Email" required>
+            <span class="help-text" id="email-help">Please enter a valid email.</span>
+
+            <textarea id="message-field" placeholder="Your message..." maxlength="200" required></textarea>
+            <span class="help-text" id="message-help">Message should not exceed 200 characters.</span>
+            <!-- Character Count -->
+            <!-- <span id="char-count">0 / 200</span> -->
+
+
+            <!-- Buttons -->
+            <div id="button-container">
+                <button class="action-button-audio" id="submit-button"><i class="fas fa-headphones"></i>&nbsp; Audio  Call</button>
+                <button class="action-button-video" id="submit-button"><i class="fas fa-video"></i>&nbsp;Video Call</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="click-sound" src="service.mp3"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
