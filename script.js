@@ -124,4 +124,4 @@ document.getElementById('floating-button').addEventListener('click', function() 
     }, 300);
 });
 
-// Rest of your JavaScript code...
+
