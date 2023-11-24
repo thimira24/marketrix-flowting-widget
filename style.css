@@ -178,5 +178,19 @@ body, html {
 }
 
 
-/* main cta button*/
+.powered-by {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 11px;
+}
+
+.powered-by a {
+   font-weight: 600;
+   color: #343434;
+    text-decoration: none; /* Optional: if you don't want the underline */
+}
+
+.powered-by a:hover {
+    text-decoration: underline; /* Optional: if you want to show an underline on hover */
+}
 
